@@ -1,0 +1,23 @@
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\bin\Debug\quiz.exe.config
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\bin\Debug\quiz.exe
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\bin\Debug\quiz.pdb
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\obj\Debug\quiz.csprojResolveAssemblyReference.cache
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\obj\Debug\quiz.Properties.Resources.resources
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\obj\Debug\quiz.Questions.resources
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\obj\Debug\quiz.Viev.resources
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\obj\Debug\quiz.csproj.GenerateResource.Cache
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\obj\Debug\quiz.exe
+\\pitagoras\profile2_studenci\pawel.pawlica\moje dokumenty\visual studio 2015\Projects\quiz\quiz\obj\Debug\quiz.pdb
+\\Pitagoras\Profile2_Studenci\pawel.pawlica\Pulpit\Studia\Pro\quiz\quiz\bin\Debug\quiz.exe.config
+\\Pitagoras\Profile2_Studenci\pawel.pawlica\Pulpit\Studia\Pro\quiz\quiz\obj\Debug\quiz.exe
+\\Pitagoras\Profile2_Studenci\pawel.pawlica\Pulpit\Studia\Pro\quiz\quiz\obj\Debug\quiz.pdb
+C:\Users\Patryk\Desktop\quiz\quiz\bin\Debug\quiz.exe.config
+C:\Users\Patryk\Desktop\quiz\quiz\obj\Debug\quiz.exe
+C:\Users\Patryk\Desktop\quiz\quiz\obj\Debug\quiz.pdb
+C:\Users\Patryk\Desktop\quiz\quiz\obj\Debug\quiz.csprojResolveAssemblyReference.cache
+C:\Users\Patryk\Desktop\quiz\quiz\obj\Debug\quiz.Properties.Resources.resources
+C:\Users\Patryk\Desktop\quiz\quiz\obj\Debug\quiz.Questions.resources
+C:\Users\Patryk\Desktop\quiz\quiz\obj\Debug\quiz.Viev.resources
+C:\Users\Patryk\Desktop\quiz\quiz\obj\Debug\quiz.csproj.GenerateResource.Cache
+C:\Users\Patryk\Desktop\quiz\quiz\bin\Debug\quiz.exe
+C:\Users\Patryk\Desktop\quiz\quiz\bin\Debug\quiz.pdb
