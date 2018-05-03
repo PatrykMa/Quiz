@@ -9,8 +9,8 @@ namespace quiz.odd
     class Quizz
     {
         //int questionNUmber;
-        string title;
-        List<Question> quests;
+        string title;// nazwa quizu
+        List<Question> quests;// lista pytan 
 
         public Quizz(string title)
         {

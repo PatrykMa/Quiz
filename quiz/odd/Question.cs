@@ -8,13 +8,30 @@ namespace quiz.odd
 {
     class Question
     {
-        public string question;
-        public bool correct;
-        public Question(string quest, bool corr)
+		public List<Answer > answers;// lista odpowiedzi
+        public string Title;// tresc pytania        
+        public Question(string title)
         {
-            question = quest;
-            correct = corr;
+           Title=title;
+        }
+		public Answer this[int i]
+        {
+            get { return answers[i]; }
+            set{answers[i]=value;}
         }
 
     }
+	
+	class Answer
+	{
+		public string answer;
+		public bool isCorect;
+		
+		public Answer(string answer, bool corect)
+		{
+			this.answer=answer;
+			isCorect=corect;
+		}
+		
+	}
 }
