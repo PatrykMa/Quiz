@@ -60,3 +60,4 @@ F:\programowanie\quiz\quiz\obj\Debug\quiz.Properties.Resources.resources
 F:\programowanie\quiz\quiz\obj\Debug\quiz.Questions.resources
 F:\programowanie\quiz\quiz\obj\Debug\quiz.Viev.resources
 F:\programowanie\quiz\quiz\obj\Debug\quiz.csproj.GenerateResource.Cache
+G:\programowanie\quiz\quiz\obj\Debug\quiz.FormMakerChosen.resources
