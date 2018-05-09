@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using quiz.presenters;
 
 namespace quiz
 {
@@ -16,7 +17,16 @@ namespace quiz
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Viev());
+            Viev viu=new Viev();
+            //TODO poprawic to xd przeca to tak nie moze byc
+            
+            quiz.Models.LoadModel loadmodel = new Models.LoadModel();
+            LoadPresenter intervievP = new LoadPresenter(viu.getinterface(),loadmodel);
+
+           // SaveModel savemodel = new SaveModel();
+            //SavePresenter intervievP = new SavePresenter(viu.getinterface(), savemodel);
+
+            Application.Run(viu);
         }
     }
 }

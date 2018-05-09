@@ -7,14 +7,23 @@ using System.Threading.Tasks;
 namespace quiz.odd
 {
     class Quizz
-    {
-        //int questionNUmber;
-        string title;// nazwa quizu
-        List<Question> quests;// lista pytan 
+    {     
+        public string title;
+        public List<Question> quests;
+
+        public int size()
+        {
+            return quests.Count;
+        }
 
         public Quizz(string title)
         {
+            quests = new List<Question>();
             this.title = title;
+        }
+        public Quizz()
+        {
+            quests = new List<Question>();           
         }
         public Quizz(string title, List<Question> quest):this(title)
         {
@@ -30,9 +39,16 @@ namespace quiz.odd
         {
             quests.Add(quest);
         }
-        string parseToJSon()
+        public string parseToJSon()
         {
-            return System.Object.Newtonsoft.JsonConvert.SerializeObject(this);
+            return Newtonsoft.Json.JsonConvert.SerializeObject(this);
+        }
+        public void deserialize(string Json)
+        {
+            Quizz temp = new Quizz("");
+            temp = Newtonsoft.Json.JsonConvert.DeserializeObject<Quizz>(Json);
+            this.quests = temp.quests;
+            this.title = temp.title;
         }
     }
 

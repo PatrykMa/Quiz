@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace quiz
 {
-    public partial class Viev : Form
+    public partial class FormMakerChosen : Form
     {
-        public Viev()
+        public FormMakerChosen()
         {
             InitializeComponent();
-        }
-        //TODO poprawic to !!!!!
-        public Questions getinterface()
-        {
-            return this.questions1;
         }
     }
 }

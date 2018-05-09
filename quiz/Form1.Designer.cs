@@ -1,6 +1,6 @@
 ﻿namespace quiz
 {
-    partial class Viev
+    partial class FormMakerChosen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,42 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.questions1 = new quiz.Questions();
             this.SuspendLayout();
             // 
-            // questions1
-            // 
-            this.questions1.ActionText = "Save";
-            this.questions1.Location = new System.Drawing.Point(12, 12);
-            this.questions1.Name = "questions1";
-            this.questions1.Q1Check = false;
-            this.questions1.Q1text = "";
-            this.questions1.Q2Check = false;
-            this.questions1.Q2text = "";
-            this.questions1.Q3Check = false;
-            this.questions1.Q3text = "";
-            this.questions1.Q4Check = false;
-            this.questions1.Q4text = "";
-            this.questions1.QName = "";
-            this.questions1.Qtitle = "";
-            this.questions1.Size = new System.Drawing.Size(329, 275);
-            this.questions1.TabIndex = 0;
-            // 
-            // Viev
+            // FormMakerChosen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 302);
-            this.Controls.Add(this.questions1);
-            this.Name = "Viev";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(358, 303);
+            this.Name = "FormMakerChosen";
+            this.Text = "Quizz Maker";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Questions questions1;
     }
 }
-

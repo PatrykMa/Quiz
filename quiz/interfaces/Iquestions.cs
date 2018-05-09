@@ -8,20 +8,33 @@ namespace quiz
 {
     interface Iquestions
     {
-        string Q1text { get; set; }
-        string Q2text { get; set; }
-        string Q3text { get; set; }
-        string Q4text { get; set; }
+
+        bool loadDialog{get; set;}
+        string info { set; }
+
+        string getQuestiontext(int number);
+        void setQuestiontext(string tresc,int number);
+        void setAnswerCorrect(int number, bool checke);
+        void setAnswerTextEditable(int numb, bool isEditable);
+
+        bool isAnswerCorect(int number);
         string Qtitle { get; set; }
         string QName { get; set; }
-        event Action<object> ButtonActionClick;
-        event Action<object> ButtonBackClick;
-        event Action<object> ButtonForwardClick;
 
-        bool Q1Check { get; set; }
-        bool Q2Check { get; set; }
-        bool Q3Check { get; set; }
-        bool Q4Check { get; set; }
+
+        string ActionText { get;set;}
+        string ActionTextSecond { get; set; }
+        string path { get; set; }
+
+        event Action<object> Action;
+        event Action<object> ActionSecond;
+        event Action<object> Back;
+        event Action<object> Forward;
+
+
+
+
+        
 
         event Action<object> Q1CheckClick;
         event Action<object> Q2CheckClick;

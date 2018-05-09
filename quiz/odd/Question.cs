@@ -8,30 +8,35 @@ namespace quiz.odd
 {
     class Question
     {
-		public List<Answer > answers;// lista odpowiedzi
-        public string Title;// tresc pytania        
-        public Question(string title)
+        public string questionContent;//tresc pytania
+        public List<odd.Answer> answers;
+
+        public Question(string quest)
         {
-           Title=title;
+            answers = new List<odd.Answer>();
+            questionContent = quest;
+            
         }
-		public Answer this[int i]
+        public int size()
         {
-            get { return answers[i]; }
-            set{answers[i]=value;}
+            return answers.Count;
+        }
+        public void addAnswer(odd.Answer odp)
+        {
+            answers.Add(odp);
+        }
+        public void addAnswer(string content, bool iscorect)
+        {
+            answers.Add(new odd.Answer(content,iscorect));
+        }
+        public Answer this[int i]
+        {
+            get
+            {
+                return this.answers[i];
+            }
+            set { this.answers[i]=value; }
         }
 
     }
-	
-	class Answer
-	{
-		public string answer;
-		public bool isCorect;
-		
-		public Answer(string answer, bool corect)
-		{
-			this.answer=answer;
-			isCorect=corect;
-		}
-		
-	}
 }

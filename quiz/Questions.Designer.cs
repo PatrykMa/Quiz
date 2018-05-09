@@ -43,6 +43,8 @@
             this.textBoxQname = new System.Windows.Forms.TextBox();
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonForward = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.buttonAction2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxQuestion
@@ -118,13 +120,18 @@
             // 
             // buttonSaveOpen
             // 
-            this.buttonSaveOpen.Location = new System.Drawing.Point(133, 243);
+            this.buttonSaveOpen.Location = new System.Drawing.Point(103, 243);
             this.buttonSaveOpen.Name = "buttonSaveOpen";
-            this.buttonSaveOpen.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveOpen.Size = new System.Drawing.Size(61, 23);
             this.buttonSaveOpen.TabIndex = 12;
             this.buttonSaveOpen.Text = "Save";
             this.buttonSaveOpen.UseVisualStyleBackColor = true;
             this.buttonSaveOpen.Click += new System.EventHandler(this.buttonSaveOpen_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.CheckPathExists = false;
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // openFileDialog1
             // 
@@ -145,6 +152,7 @@
             this.buttonBack.TabIndex = 11;
             this.buttonBack.Text = "<-";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.ButtonBack_Click);
             // 
             // buttonForward
             // 
@@ -154,11 +162,24 @@
             this.buttonForward.TabIndex = 10;
             this.buttonForward.Text = "->";
             this.buttonForward.UseVisualStyleBackColor = true;
+            this.buttonForward.Click += new System.EventHandler(this.ButtonForward_Click);
+            // 
+            // buttonAction2
+            // 
+            this.buttonAction2.Location = new System.Drawing.Point(170, 243);
+            this.buttonAction2.Name = "buttonAction2";
+            this.buttonAction2.Size = new System.Drawing.Size(60, 23);
+            this.buttonAction2.TabIndex = 13;
+            this.buttonAction2.Text = "button1";
+            this.buttonAction2.UseVisualStyleBackColor = true;
+            this.buttonAction2.Click += new System.EventHandler(this.buttonAction2_Click);
             // 
             // Questions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonAction2);
+            this.Controls.Add(this.textBoxAnswer1);
             this.Controls.Add(this.buttonForward);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.textBoxQname);
@@ -170,7 +191,6 @@
             this.Controls.Add(this.textBoxAnswer4);
             this.Controls.Add(this.textBoxAnswer3);
             this.Controls.Add(this.textBoxAnswer2);
-            this.Controls.Add(this.textBoxAnswer1);
             this.Controls.Add(this.textBoxQuestion);
             this.Name = "Questions";
             this.Size = new System.Drawing.Size(329, 275);
@@ -196,5 +216,7 @@
         private System.Windows.Forms.TextBox textBoxQname;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonForward;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Button buttonAction2;
     }
 }
